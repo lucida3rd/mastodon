@@ -61,9 +61,9 @@ ja:
     posts_with_replies: トゥートと返信
     reserved_username: このユーザー名は予約されています
     roles:
-      admin: Admin
-      bot: Bot
-      moderator: Mod
+      admin: ちり紙
+      bot: 自動垢
+      moderator: 編集者
     unavailable: プロフィールは利用できません
     unfollow: フォロー解除
   admin:
@@ -155,10 +155,10 @@ ja:
       resubscribe: 再講読
       role: 役割
       roles:
-        admin: 管理者
-        moderator: モデレーター
-        staff: スタッフ
-        user: ユーザー
+        admin: ちり紙
+        moderator: 編集者
+        staff: 関係者
+        user: 一般人
       salmon_url: Salmon URL
       search: 検索
       shared_inbox_url: Shared inbox URL
