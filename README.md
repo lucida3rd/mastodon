@@ -35,8 +35,10 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v2.9.2.1#costom](https://github.com/lucida3rd/mastodon/commit/8c049e58150985eb8fe748cd17e0b35913a8a863)】
 * プロフィールの項目数を増やした。 4つ→10つ　
   【[v2.9.2.2#costom](https://github.com/lucida3rd/mastodon/commit/dd38301fe5843a0bfb8a1a1a338e8dbb61b526a7)】
-* 固定トゥート数の上限　5個→12個
-* aboutページにサーバ接続数を表示した。
+* 固定トゥート数の上限を増やした。 5個→12個　
+  【[v2.9.2.3#costom](https://github.com/lucida3rd/mastodon/commit/9bb99b66eb8a98c3870440b10fb72c1979ce7eae)】
+* aboutページにサーバ接続数を表示するようにした。　
+
 * 語尾伸ばしを直した。（ユーザ、サーバ）
 * フィルター時、タイムラインに"フィルターされました"を表示しないようにした。
 * 役割り名の変更。（★Forkする際に変えたほうがいいです。たぶん。）
