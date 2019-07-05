@@ -29,10 +29,12 @@ Branchは以下の通りです。下以外はFork当時のままで未使用で�
 
 Mynoghra.jp用にカスタムした内容は次の通りです。
 
+* バージョン表示をリポジトリに合わせた。　
+  【[v2.9.2.1#costom](https://github.com/lucida3rd/mastodon/commit/8c049e58150985eb8fe748cd17e0b35913a8a863)】
 * プロフィールの文字数を増やした。 500文字→1200文字　
   【[v2.9.2.1#costom](https://github.com/lucida3rd/mastodon/commit/8c049e58150985eb8fe748cd17e0b35913a8a863)】
-* プロフィールの項目数を増やした。 4つ→6→10つ
-* バージョン表示をリポジトリに合わせた。
+* プロフィールの項目数を増やした。 4つ→10つ　
+  【[v2.9.2.2#costom](https://github.com/lucida3rd/mastodon/commit/dd38301fe5843a0bfb8a1a1a338e8dbb61b526a7)】
 * 固定トゥート数の上限　5個→12個
 * aboutページにサーバ接続数を表示した。
 * 語尾伸ばしを直した。（ユーザ、サーバ）
