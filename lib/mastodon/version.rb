@@ -17,11 +17,11 @@ module Mastodon
     end
 
     def pre
-      nil
+      1
     end
 
     def flags
-      ''
+      '#custom'
     end
 
     def to_a
@@ -33,7 +33,7 @@ module Mastodon
     end
 
     def repository
-      ENV.fetch('GITHUB_REPOSITORY') { 'tootsuite/mastodon' }
+      ENV.fetch('GITHUB_REPOSITORY') { 'lucida3rd/mastodon' }
     end
 
     def source_base_url
