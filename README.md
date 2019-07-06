@@ -47,6 +47,7 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v2.9.2.7#costom](https://github.com/lucida3rd/mastodon/commit/ef64fbec2a14a98983dc1b1efe55e6dc57e3e93b)】
 * ヒーローイメージの推奨サイズ表示を実際に合うサイズを示すようになおした。過去に使用したファイル名を使わないように促した。　
   【[v2.9.2.8#costom](https://github.com/lucida3rd/mastodon/commit/8c5ec0e861a5610d7925b596e6182d58cf9a827e)】
+* リスト名の後ろに + がついているとき、自分のトゥートがリストに入るようにした。　
 
 
 
