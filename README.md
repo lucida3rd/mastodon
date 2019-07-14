@@ -38,7 +38,7 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
 * 固定トゥート数の上限を増やした。 5個→12個　
   【[v2.9.2.3#costom](https://github.com/lucida3rd/mastodon/commit/9bb99b66eb8a98c3870440b10fb72c1979ce7eae)】
 * aboutページにサーバ接続数を表示するようにした。　
-  【[v2.9.2.12#costom]()】
+  【[v2.9.2.12#costom](https://github.com/lucida3rd/mastodon/commit/5b4508b74d12afc1da9eb8ba43056e11451cfa34)】
 * フィルター時、タイムラインに"フィルターされました"を表示しないようにした。　
   【[v2.9.2.5#costom](https://github.com/lucida3rd/mastodon/commit/a7ea0307724f02bf5789b583b557cc72b5742536)】
 * 役割り名の変更。（★Forkする際に変えたほうがいいです。たぶん。）　
