@@ -37,6 +37,9 @@ ja:
     user_count_after:
       other: 人
     user_count_before: ユーザ数
+    domain_count_after:
+      other: 箇所
+    domain_count_before: サーバ接続数
     what_is_mastodon: Mastodon とは？
   accounts:
     choices_html: "%{name} によるおすすめ:"

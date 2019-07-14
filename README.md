@@ -38,7 +38,7 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
 * 固定トゥート数の上限を増やした。 5個→12個　
   【[v2.9.2.3#costom](https://github.com/lucida3rd/mastodon/commit/9bb99b66eb8a98c3870440b10fb72c1979ce7eae)】
 * aboutページにサーバ接続数を表示するようにした。　
-  【[v2.9.2.4#costom](https://github.com/lucida3rd/mastodon/commit/5f5ad5f26a10d5b42dc13fbaa90efb39662da88f)】
+  【[v2.9.2.12#costom]()】
 * フィルター時、タイムラインに"フィルターされました"を表示しないようにした。　
   【[v2.9.2.5#costom](https://github.com/lucida3rd/mastodon/commit/a7ea0307724f02bf5789b583b557cc72b5742536)】
 * 役割り名の変更。（★Forkする際に変えたほうがいいです。たぶん。）　
@@ -49,6 +49,19 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v2.9.2.8#costom](https://github.com/lucida3rd/mastodon/commit/8c5ec0e861a5610d7925b596e6182d58cf9a827e)】
 * リスト名の後ろに + がついているとき、自分のトゥートがリストに入るようにした。　
   【[v2.9.2.9#costom](https://github.com/lucida3rd/mastodon/commit/d0c9d2340d271c436d8eec2eb9b07baf955999c2)】
+* 固定トゥート数の上限　5個→12個
+* aboutページにサーバ接続数を表示した。
+* 語尾伸ばしを直した。（ユーザ、サーバ）
+* フィルター時、タイムラインに"フィルターされました"を表示しないようにした。
+* 役割り名の変更。（★Forkする際に変えたほうがいいです。たぶん。）
+* ロール「bot」に対するCSS追加。
+* メニューの位置をかえた。
+* 表メニューの位置をかえた。
+* ヒーローイメージの推奨サイズ表示を実際に合うサイズを示すようになおした。
+* 過去に使用したファイル名を使わないように促した。
+* プロファイル絵文字挿入機能の追加。（best-friends対応）
+* アバター絵文字のキャッシュクリア変更。（best-friends対応）
+* 自動サジェスチョンの改良。
 
 
 
