@@ -24,12 +24,16 @@ module Mastodon
       '#custom'
     end
 
+    def suffix
+      ''
+    end
+
     def to_a
       [major, minor, patch, pre].compact
     end
 
     def to_s
-      [to_a.join('.'), flags].join
+      [to_a.join('.'), flags, suffix].join
     end
 
     def repository
