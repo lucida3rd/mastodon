@@ -49,6 +49,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v2.9.2.8#costom](https://github.com/lucida3rd/mastodon/commit/8c5ec0e861a5610d7925b596e6182d58cf9a827e)】
 * リスト名の後ろに + がついているとき、自分のトゥートがリストに入るようにした。　
   【[v2.9.2.9#costom](https://github.com/lucida3rd/mastodon/commit/d0c9d2340d271c436d8eec2eb9b07baf955999c2)】
+* 未収載トゥートをタグタイムラインに載せる。　
+  【[v2.9.2.18#costom]()】
 
 
 
