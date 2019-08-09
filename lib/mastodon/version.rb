@@ -17,7 +17,7 @@ module Mastodon
     end
 
     def pre
-      19
+      20
     end
 
     def flags
