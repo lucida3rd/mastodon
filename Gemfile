@@ -77,6 +77,7 @@ gem 'rails-settings-cached', '~> 0.6'
 gem 'redis', '~> 4.1', require: ['redis', 'redis/connection/hiredis']
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'rqrcode', '~> 0.10'
+gem 'ruby-progressbar', '~> 1.10'
 gem 'sanitize', '~> 5.1'
 gem 'sidekiq', '~> 5.2'
 gem 'sidekiq-scheduler', '~> 3.0'
@@ -112,9 +113,9 @@ group :production, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 3.28'
+  gem 'capybara', '~> 3.29'
   gem 'climate_control', '~> 0.2'
-  gem 'faker', '~> 2.2'
+  gem 'faker', '~> 2.3'
   gem 'microformats', '~> 4.1'
   gem 'rails-controller-testing', '~> 1.0'
   gem 'rspec-sidekiq', '~> 3.0'

@@ -242,11 +242,9 @@ Rails.application.routes.draw do
       resource :two_factor_authentication, only: [:destroy]
     end
 
-    resources :custom_emojis, only: [:index, :new, :create, :update, :destroy] do
-      member do
-        post :copy
-        post :enable
-        post :disable
+    resources :custom_emojis, only: [:index, :new, :create] do
+      collection do
+        post :batch
       end
     end
 
@@ -312,8 +310,6 @@ Rails.application.routes.draw do
           post :read
         end
       end
-
-      get '/search', to: 'search#index', as: :search
 
       resources :media,        only: [:create, :update]
       resources :blocks,       only: [:index]
