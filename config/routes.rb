@@ -41,6 +41,7 @@ Rails.application.routes.draw do
 
     namespace :auth do
       resource :setup, only: [:show, :update], controller: :setup
+      resource :challenge, only: [:create], controller: :challenges
     end
   end
 
@@ -440,7 +441,6 @@ Rails.application.routes.draw do
 
   get '/about',        to: 'about#show'
   get '/about/more',   to: 'about#more'
-  get '/about/blocks', to: 'about#blocks'
   get '/terms',        to: 'about#terms'
 
   match '/', via: [:post, :put, :patch, :delete], to: 'application#raise_not_found', format: false
