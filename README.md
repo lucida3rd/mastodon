@@ -51,6 +51,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v2.9.2.9#costom](https://github.com/lucida3rd/mastodon/commit/d0c9d2340d271c436d8eec2eb9b07baf955999c2)】
 * 未収載トゥートをタグタイムラインに載せる。　
   【[v2.9.2.18#costom](https://github.com/lucida3rd/mastodon/commit/585723f69d4724ca65813e784883a382ea4ab39c)】
+* ドメインブロック画面で「メディアファイルを拒否」表示を復活させた。　
+  【[v2.9.3.5#costom](https://github.com/lucida3rd/mastodon/commit/2884d927058e088dfee4c874997019497e921833)】
 
 
 
