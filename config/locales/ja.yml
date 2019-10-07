@@ -17,11 +17,14 @@ ja:
     contact_unavailable: N/A
     discover_users: ユーザを見つける
     documentation: ドキュメント
+    extended_description_html: |
+      <h3>ルールを書くのに適した場所</h3>
+      <p>詳細説明が設定されていません。</p>
     federation_hint_html: "%{instance} のアカウントひとつでどんなMastodon互換サーバのユーザでもフォローできるでしょう。"
     generic_description: "%{domain} は、Mastodon サーバの一つです"
     get_apps: モバイルアプリを試す
     hosted_on: Mastodon hosted on %{domain}
-    instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、特定のユーザーを示すものではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックするときは、このアカウントをブロックせずに、ドメインブロックを使用してください。
+    instance_actor_flash: 'このアカウントはサーバそのものを示す仮想的なもので、特定のユーザを示すものではありません。これはサーバの連合のために使用されます。サーバ全体をブロックするときは、このアカウントをブロックせずに、ドメインブロックを使用してください。
 
 '
     learn_more: もっと詳しく
@@ -34,14 +37,6 @@ ja:
     status_count_before: トゥート数
     tagline: Follow friends and discover new ones
     terms: 利用規約
-    unavailable_content: 制限中のサーバー
-    unavailable_content_description:
-      domain: サーバー
-      reason: 制限理由
-      rejecting_media: 'これらのサーバーからのメディアファイルは処理されず、保存や変換もされません。サムネイルも表示されません。表示するにはクリックしてそのサーバーに直接アクセスする必要があります:'
-      silenced: 'これらのサーバーからの投稿は公開タイムラインと会話から隠されます。また該当するユーザーからの通知は相手をフォローしている場合を除き表示されません:'
-      suspended: 'これらのサーバーからのデータは処理されず、保存や変換もされません。該当するユーザーとの交流もできません:'
-    unavailable_content_html: 通常 Mastodon では連合先のどんなサーバーのユーザーとでもやりとりできます。ただし次のサーバーには例外が設定されています。
     user_count_after:
       other: 人
     user_count_before: ユーザ数
@@ -310,7 +305,7 @@ ja:
           suspend: 停止
         title: 新規ドメインブロック
       private_comment: コメント (非公開)
-      private_comment_hint: このコメントは同じサーバーのモデレーターも閲覧できます。
+      private_comment_hint: このコメントは同じサーバのモデレーターも閲覧できます。
       public_comment: コメント (公開)
       public_comment_hint: ドメインブロックの公開を有効にしている場合、このコメントも公開されます。
       reject_media: メディアファイルを拒否
@@ -435,13 +430,13 @@ ja:
         desc_html: 全ページに適用されるCSSの編集
         title: カスタムCSS
       default_noindex:
-        desc_html: この設定を変更していない全ユーザーに影響します
+        desc_html: この設定を変更していない全ユーザに影響します
         title: デフォルトで検索エンジンによるインデックスを拒否する
       domain_blocks:
         all: 誰にでも許可
         disabled: 誰にも許可しない
         title: ドメインブロックを表示
-        users: ログイン済みローカルユーザーのみ許可
+        users: ログイン済みローカルユーザのみ許可
       domain_blocks_rationale:
         title: コメントを表示
       hero:
@@ -524,7 +519,7 @@ ja:
     tags:
       accounts_today: 本日使用した人数
       accounts_week: 今週使用した人数
-      breakdown: 直近のサーバー別使用状況
+      breakdown: 直近のサーバ別使用状況
       context: 表示先
       directory: ディレクトリに使用
       in_directory: "%{count} 人がディレクトリに使用"
@@ -593,9 +588,9 @@ ja:
     delete_account: アカウントの削除
     delete_account_html: アカウントを削除したい場合、<a href="%{path}">こちら</a> から手続きが行えます。削除する前に、確認画面があります。
     description:
-      prefix_invited_by_user: "@%{name} があなたをこの Mastodon サーバーに招待しました"
+      prefix_invited_by_user: "@%{name} があなたをこの Mastodon サーバに招待しました"
       prefix_sign_up: 今すぐ Mastodon を始めよう！
-      suffix: アカウントがあれば、どんな Mastodon 互換サーバーのユーザーでもフォローしたりメッセージをやり取りできるようになります！
+      suffix: アカウントがあれば、どんな Mastodon 互換サーバのユーザでもフォローしたりメッセージをやり取りできるようになります！
     didnt_get_confirmation: 確認メールを受信できませんか？
     forgot_password: パスワードをお忘れですか？
     invalid_reset_password_token: パスワードリセットトークンが正しくないか期限切れです。もう一度リクエストしてください。
@@ -621,7 +616,7 @@ ja:
       account_status: アカウントの状態
       confirming: メールアドレスの確認が完了するのを待っています。
       functional: アカウントは完全に機能しています。
-      pending: あなたの申請は現在サーバー管理者による審査待ちです。これにはしばらくかかります。申請が承認されるとメールが届きます。
+      pending: あなたの申請は現在サーバ管理者による審査待ちです。これにはしばらくかかります。申請が承認されるとメールが届きます。
       redirecting_to: アカウントは %{acct} に引っ越し設定されているため非アクティブになっています。
     trouble_logging_in: ログインできませんか？
   authorize_follow:
@@ -657,24 +652,41 @@ ja:
   deletes:
     challenge_not_passed: 入力された情報は正しくありません
     confirm_password: 本人確認のため、現在のパスワードを入力してください
-    confirm_username: 確認のためユーザー名を入力してください
+    confirm_username: 確認のためユーザ名を入力してください
     proceed: アカウントを削除する
     success_msg: アカウントは正常に削除されました
     warning:
       before: '続行する前に、次の点を再度確認してください:'
-      caches: 削除しても他のサーバーに残り続ける場合があります
-      data_removal: あなたの投稿やその他のデータはこのサーバーから完全に削除されます
+      caches: 削除しても他のサーバに残り続ける場合があります
+      data_removal: あなたの投稿やその他のデータはこのサーバから完全に削除されます
       email_change_html: アカウントを削除しなくても<a href="%{path}">メールアドレスを変更</a>できます
       email_contact_html: それでも届かない場合、<a href="mailto:%{email}">%{email}</a> までメールで問い合わせてください
       email_reconfirmation_html: 確認のメールが届かない場合、<a href="%{path}">もう一度申請</a>できます。
       irreversible: アカウントを元に戻したり復活させることはできません
       more_details_html: 詳しくは<a href="%{terms_path}">プライバシーポリシー</a>をご覧ください。
-      username_available: あなたのユーザー名は再利用できるようになります
-      username_unavailable: あなたのユーザー名は引き続き利用できません
+      username_available: あなたのユーザ名は再利用できるようになります
+      username_unavailable: あなたのユーザ名は引き続き利用できません
   directories:
     directory: ディレクトリ
     explanation: 関心を軸にユーザを発見しよう
     explore_mastodon: "%{title}を探索"
+  domain_blocks:
+    blocked_domains: ドメインブロックリスト
+    description: "%{instance} が連合を制限または拒否しているサーバのリストです。"
+    domain: ドメイン
+    media_block: メディアを拒否
+    no_domain_blocks: "(ドメインブロックなし)"
+    severity: 重大性
+    severity_legend:
+      media_block: サーバから送信されるメディアファイルは取得も保存もされず、またユーザには表示されません。
+      silence: サイレンスされたサーバのアカウントは検索やフォロー、交流することができますが、トゥートは公開タイムラインに表示されません。またフォローしていないユーザには通知が届きません。
+      suspension: 停止されたサーバからのコンテンツは保存も表示もされず、また送信もされません。停止されたサーバからの交流は拒否されます。
+      suspension_disclaimer: 停止されたサーバでもこのサーバから公開コンテンツを取得することがあります。
+      title: 重大性
+    show_rationale: コメントを表示
+    silence: サイレンス
+    suspension: 停止
+    title: "%{instance} のドメインブロックリスト"
   domain_validator:
     invalid_domain: は無効なドメイン名です
   errors:
@@ -690,7 +702,7 @@ ja:
     '500':
       content: もうしわけありませんが、なにかが間違っています。
       title: このページは正しくありません
-    '503': 一時的なサーバー障害のため利用することができません。
+    '503': 一時的なサーバ障害のため利用することができません。
     noscript_html: Mastodonのウェブアプリケーションを利用する場合はJavaScriptを有効にしてください。またはあなたのプラットフォーム向けの<a href="%{apps_path}">Mastodonネイティブアプリ</a>を探すことができます。
   existing_username_validator:
     not_found: そのようなユーザ名はローカルに見つかりませんでした
@@ -1156,10 +1168,10 @@ ja:
     warning:
       explanation:
         disable: アカウントが凍結されている間、データはそのまま残りますが、凍結が解除されるまでは何の操作もできません。
-        silence: あなたのアカウントは制限されていますが、あなたをフォローしているユーザーのみ、このサーバー上の投稿を見ることができます。そしてあなたは様々な公開リストから除外されるかもしれません。ただし、他のユーザーは手動であなたをフォローすることができます。
-        suspend: あなたのアカウントは停止されています。あなたの投稿とアップロードされたメディアファイルは、このサーバーとあなたのフォロワーが参加していたサーバーから完全に削除されました。
+        silence: あなたのアカウントは制限されていますが、あなたをフォローしているユーザのみ、このサーバ上の投稿を見ることができます。そしてあなたは様々な公開リストから除外されるかもしれません。ただし、他のユーザは手動であなたをフォローすることができます。
+        suspend: あなたのアカウントは停止されています。あなたの投稿とアップロードされたメディアファイルは、このサーバとあなたのフォロワーが参加していたサーバから完全に削除されました。
       get_in_touch: このメールに返信することで %{instance} のスタッフと連絡を取ることができます。
-      review_server_policies: サーバーのポリシーを確認
+      review_server_policies: サーバのポリシーを確認
       statuses: '特に次のトゥート:'
       subject:
         disable: あなたのアカウント %{acct} は凍結されています
