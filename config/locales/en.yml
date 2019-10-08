@@ -38,6 +38,8 @@ en:
     status_count_before: Who authored
     tagline: Follow friends and discover new ones
     terms: Terms of service
+    unavailable_content: Unavailable content
+    unavailable_content_link: Domain block list
     user_count_after:
       one: user
       other: users
@@ -677,6 +679,7 @@ en:
     blocked_domains: List of limited and blocked domains
     description: This is the list of servers that %{instance} limits or reject federation with.
     domain: Domain
+    comment: Comment
     media_block: Media block
     no_domain_blocks: "(No domain blocks)"
     severity: Severity

@@ -48,5 +48,21 @@
   .column-3
     = render 'application/flashes'
 
-    .box-widget
-      .rich-formatting= @instance_presenter.site_extended_description.html_safe.presence || t('about.extended_description_html')
+    - if @contents.blank? && (!display_blocks? || @blocks&.empty?)
+      = nothing_here
+    - else
+      .box-widget
+        .rich-formatting
+          = @contents.html_safe
+
+          - if display_blocks? && !@blocks.empty?
+            %h2#unavailable-content= t('about.unavailable_content')
+            = t('domain_blocks.description', instance: site_hostname)
+
+            %a( class='anchor_text' href='blocks' target='_blank' )
+              = t('about.unavailable_content_link')
+
+
+
+
+

@@ -74,10 +74,13 @@ $small-breakpoint: 960px;
  h2 {
     font-family: $font-display, sans-serif;
     font-size: 22px;
-    line-height: 26px;
+    margin-top: 1.275em;
+    margin-bottom: 8px;
     font-weight: 500;
-    margin-bottom: 20px;
     color: $secondary-text-color;
+    border-top: solid 2px $darker-text-color;
+    padding-top: 8px;
+    padding-bottom: 0px;
   }
 
   h3 {

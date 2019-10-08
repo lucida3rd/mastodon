@@ -10,10 +10,9 @@
         %table.blocks-table
           %thead
             %tr
-              %th= t('domain_blocks.domain')
               %th.severity-column= t('domain_blocks.severity')
-              - if @show_rationale
-                %th.button-column
+              %th= t('domain_blocks.domain')
+              %th= t('domain_blocks.comment')
           %tbody
             - if @blocks.empty?
               %tr
@@ -21,17 +20,17 @@
             - else
               - @blocks.each_with_index do |block, i|
                 %tr{ class: i % 2 == 0 ? 'even': nil }
-                  %td{ title: block.domain }= block.domain
                   %td= block_severity_text(block)
+                  %td{ title: block.domain }= block.domain
+
                   - if @show_rationale
-                    %td
-                      - if block.public_comment.present?
-                        %button.icon-button{ title: t('domain_blocks.show_rationale'), 'aria-label' => t('domain_blocks.show_rationale') }
-                          = fa_icon 'chevron-down fw', 'aria-hidden' => true
-                - if @show_rationale
-                  - if block.public_comment.present?
-                    %tr.rationale.hidden
-                      %td{ colspan: 3 }= block.public_comment.presence
+                    - if block.public_comment.present?
+                      %td= block.public_comment.presence
+                    - else
+                      %td= "　"
+                  - else
+                    %td= "　"
+
       %h2= t('domain_blocks.severity_legend.title')
       - if @blocks.any? { |block| block.reject_media? }
         %h3= t('domain_blocks.media_block')

@@ -16,9 +16,17 @@ class AboutController < ApplicationController
 
   def more
     flash.now[:notice] = I18n.t('about.instance_actor_flash') if params[:instance_actor]
+
+    toc_generator = TOCGenerator.new(@instance_presenter.site_extended_description)
+
+    @contents          = toc_generator.html
+    @table_of_contents = toc_generator.toc
+    @blocks            = DomainBlock.with_user_facing_limitations.by_severity if display_blocks?
   end
 
   def terms; end
+
+  helper_method :display_blocks?
 
   def blocks
     @show_rationale = Setting.show_domain_blocks_rationale == 'all'
@@ -30,6 +38,10 @@ class AboutController < ApplicationController
 
   def require_open_federation!
     not_found if whitelist_mode?
+  end
+
+  def display_blocks?
+    Setting.show_domain_blocks == 'all' || (Setting.show_domain_blocks == 'users' && user_signed_in?)
   end
 
   def check_blocklist_enabled
