@@ -92,15 +92,18 @@ Mastodonは、ActivityPubをベースにした無料のオープンソースの�
 * 使用の許諾、謝辞については不要です。
 
 
-[![GitHub release](https://img.shields.io/github/release/tootsuite/mastodon.svg)][releases]
-[![Build Status](https://img.shields.io/circleci/project/github/tootsuite/mastodon.svg)][circleci]
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/tootsuite/mastodon.svg)][code_climate]
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/mastodon/localized.svg)][crowdin]
-[![Docker Pulls](https://img.shields.io/docker/pulls/tootsuite/mastodon.svg)][docker]
 
-[releases]: https://github.com/tootsuite/mastodon/releases
-[circleci]: https://circleci.com/gh/tootsuite/mastodon
-[code_climate]: https://codeclimate.com/github/tootsuite/mastodon
-[crowdin]: https://crowdin.com/project/mastodon
-[docker]: https://hub.docker.com/r/tootsuite/mastodon/
+<a id="iSupport"></a>
+## 本家情報
+- [Screenshot][youtube_demo]
+- [Project homepage 🐘](https://joinmastodon.org)
+- [Support the development via Patreon][patreon]
+- [View sponsors](https://joinmastodon.org/sponsors)
+- [Blog](https://blog.joinmastodon.org)
+- [Documentation](https://docs.joinmastodon.org)
+- [Browse Mastodon servers](https://joinmastodon.org/#getting-started)
+- [Browse Mastodon apps](https://joinmastodon.org/apps)
+
+[patreon]: https://www.patreon.com/mastodon
+[youtube_demo]: https://www.youtube.com/watch?v=IPSbNdBmWKE
 
