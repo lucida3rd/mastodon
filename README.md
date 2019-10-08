@@ -53,6 +53,10 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v2.9.2.18#costom](https://github.com/lucida3rd/mastodon/commit/585723f69d4724ca65813e784883a382ea4ab39c)】
 * ドメインブロック画面で「メディアファイルを拒否」表示を復活させた。　
   【[v2.9.3.5#costom](https://github.com/lucida3rd/mastodon/commit/2884d927058e088dfee4c874997019497e921833)】
+* about/more にドメインブロック一覧を表示するのをやめて、別ページにした。　
+  【[v3.0.0.1#costom](https://github.com/lucida3rd/mastodon/commit/ce59361bf7c9cff7ae130f52d403c4b0d0459504)】
+* about/moreにドメインブロック一覧のリンクを出すようにした。　
+  【[v3.0.0.2#costom](https://github.com/lucida3rd/mastodon/commit/d4575fc2abf4e89a04d51597ba72f1e82ea7e803)】
 
 
 
