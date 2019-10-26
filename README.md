@@ -103,6 +103,7 @@ Mastodonは、ActivityPubをベースにした無料のオープンソースの�
 - [Documentation](https://docs.joinmastodon.org)
 - [Browse Mastodon servers](https://joinmastodon.org/#getting-started)
 - [Browse Mastodon apps](https://joinmastodon.org/apps)
+- [Readme(original)](https://github.com/tootsuite/mastodon/blob/master/README.md)
 
 [patreon]: https://www.patreon.com/mastodon
 [youtube_demo]: https://www.youtube.com/watch?v=IPSbNdBmWKE
