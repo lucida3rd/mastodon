@@ -95,16 +95,25 @@ Mastodonは、ActivityPubをベースにした無料のオープンソースの�
 
 <a id="iSupport"></a>
 ## 本家情報
-- [Screenshot][youtube_demo]
-- [Project homepage 🐘](https://joinmastodon.org)
-- [Support the development via Patreon][patreon]
-- [View sponsors](https://joinmastodon.org/sponsors)
-- [Blog](https://blog.joinmastodon.org)
-- [Documentation](https://docs.joinmastodon.org)
-- [Browse Mastodon servers](https://joinmastodon.org/#getting-started)
-- [Browse Mastodon apps](https://joinmastodon.org/apps)
-- [Readme(original)](https://github.com/tootsuite/mastodon/blob/master/README.md)
+![Mastodon](https://i.imgur.com/NhZc40l.png)
 
-[patreon]: https://www.patreon.com/mastodon
+[![GitHub release](https://img.shields.io/github/release/tootsuite/mastodon.svg)][releases]
+[![Build Status](https://img.shields.io/circleci/project/github/tootsuite/mastodon.svg)][circleci]
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/tootsuite/mastodon.svg)][code_climate]
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/mastodon/localized.svg)][crowdin]
+[![Docker Pulls](https://img.shields.io/docker/pulls/tootsuite/mastodon.svg)][docker]
+
+[releases]: https://github.com/tootsuite/mastodon/releases
+[circleci]: https://circleci.com/gh/tootsuite/mastodon
+[code_climate]: https://codeclimate.com/github/tootsuite/mastodon
+[crowdin]: https://crowdin.com/project/mastodon
+[docker]: https://hub.docker.com/r/tootsuite/mastodon/
+
+Mastodon is a **free, open-source social network server** based on ActivityPub where users can follow friends and discover new ones. On Mastodon, users can publish anything they want: links, pictures, text, video. All Mastodon servers are interoperable as a federated network (users on one server can seamlessly communicate with users from another one, including non-Mastodon software that implements ActivityPub)!
+
+Click below to **learn more** in a video:
+
+[![Screenshot](https://blog.joinmastodon.org/2018/06/why-activitypub-is-the-future/ezgif-2-60f1b00403.gif)][youtube_demo]
+
 [youtube_demo]: https://www.youtube.com/watch?v=IPSbNdBmWKE
 
