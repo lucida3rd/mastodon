@@ -1112,6 +1112,14 @@
       font-weight: 500;
       color: $action-button-color;
     }
+
+    &__range {
+      display: inline-block;
+      width: 48px;
+      font-size: 12px;
+      font-weight: 500;
+      color: $action-button-color;
+    }
   }
 }
 
