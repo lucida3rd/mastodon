@@ -57,6 +57,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v3.0.0.1#costom](https://github.com/lucida3rd/mastodon/commit/ce59361bf7c9cff7ae130f52d403c4b0d0459504)】
 * about/moreにドメインブロック一覧のリンクを出すようにした。　
   【[v3.0.0.2#costom](https://github.com/lucida3rd/mastodon/commit/d4575fc2abf4e89a04d51597ba72f1e82ea7e803)】
+* タイムラインのトゥートに公開範囲をつけた。　
+  【[v3.0.1.8#costom](https://github.com/lucida3rd/mastodon/commit/d94ae6762f2844abcaa7861e977de0e68c06f28c)】
 
 
 
