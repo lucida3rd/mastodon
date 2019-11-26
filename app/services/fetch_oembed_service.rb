@@ -36,6 +36,26 @@ class FetchOEmbedService
     @endpoint_url = nil
   end
 
+  def parse_cached_endpoint!
+    cached = @options[:cached_endpoint]
+
+    return if cached[:endpoint].nil? || cached[:format].nil?
+
+    @endpoint_url = Addressable::Template.new(cached[:endpoint]).expand(url: @url).to_s
+    @format       = cached[:format]
+  end
+
+  def cache_endpoint!
+    url_domain = Addressable::URI.parse(@url).normalized_host
+
+    endpoint_hash = {
+      endpoint: @endpoint_url.gsub(/(=(http[s]?(%3A|:)(\/\/|%2F%2F)))([^&]*)/i, '={url}'),
+      format: @format,
+    }
+
+    Rails.cache.write("oembed_endpoint:#{url_domain}", endpoint_hash, expires_in: ENDPOINT_CACHE_EXPIRES_IN)
+  end
+
   def fetch!
     return if @endpoint_url.blank?
 
