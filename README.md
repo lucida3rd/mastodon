@@ -79,13 +79,12 @@ Mastodonは、ActivityPubをベースにした無料のオープンソースの�
 ## ライセンス
 このソースコードはGUNフリーソフトライセンスで保証されています。  
 再配布の条件については、Fork元であるMastodon本家のルールに帰属します。  
-**※以下、本家Readme.md直訳**  
+**※以下、本家Readme.mdより抜粋**  
   
-* Copyright（C）2016-2019 Eugen Rochkoおよびその他のMastodon貢献者。  
-  （[AUTHORS.md]（AUTHORS.md）参照）
-* このプログラムはフリーソフトウェアです。フリーソフトウェア財団によって公開されているGNU Affero一般公衆利用許諾契約書のバージョン3、または（あなたの選択により）それ以降のバージョンのいずれかに従って再配布または修正できます。  
-* このプログラムは役に立つことを願って配布されていますが、いかなる保証もありません。 商品性や特定の目的への適合性についての暗黙の保証すらありません。 詳細については、GNU Affero General Public Licenseを参照してください。  
-* このプログラムと一緒にGNU Affero General Public Licenseのコピーを受け取っているはずです。 そうでない場合は、<https://www.gnu.org/licenses />を参照してください。  
+* Copyright (C) 2016-2019 Eugen Rochko & other Mastodon contributors (see AUTHORS.md)  
+* This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.  
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.  
+* You should have received a copy of the GNU Affero General Public License along with this program. If not, see https://www.gnu.org/licenses/.  
 
 
 
@@ -94,30 +93,3 @@ Mastodonは、ActivityPubをベースにした無料のオープンソースの�
 * 当ソースを使用したことによる不具合、損害について当方は責任を持ちません。全て自己責任でお願いします。
 * 当ソースの仕様、不具合についての質問は受け付けません。自己解析、自己対応でお願いします。
 * 使用の許諾、謝辞については不要です。
-
-
-
-<a id="iSupport"></a>
-## 本家情報
-![Mastodon](https://i.imgur.com/NhZc40l.png)
-
-[![GitHub release](https://img.shields.io/github/release/tootsuite/mastodon.svg)][releases]
-[![Build Status](https://img.shields.io/circleci/project/github/tootsuite/mastodon.svg)][circleci]
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/tootsuite/mastodon.svg)][code_climate]
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/mastodon/localized.svg)][crowdin]
-[![Docker Pulls](https://img.shields.io/docker/pulls/tootsuite/mastodon.svg)][docker]
-
-[releases]: https://github.com/tootsuite/mastodon/releases
-[circleci]: https://circleci.com/gh/tootsuite/mastodon
-[code_climate]: https://codeclimate.com/github/tootsuite/mastodon
-[crowdin]: https://crowdin.com/project/mastodon
-[docker]: https://hub.docker.com/r/tootsuite/mastodon/
-
-Mastodon is a **free, open-source social network server** based on ActivityPub where users can follow friends and discover new ones. On Mastodon, users can publish anything they want: links, pictures, text, video. All Mastodon servers are interoperable as a federated network (users on one server can seamlessly communicate with users from another one, including non-Mastodon software that implements ActivityPub)!
-
-Click below to **learn more** in a video:
-
-[![Screenshot](https://blog.joinmastodon.org/2018/06/why-activitypub-is-the-future/ezgif-2-60f1b00403.gif)][youtube_demo]
-
-[youtube_demo]: https://www.youtube.com/watch?v=IPSbNdBmWKE
-
