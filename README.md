@@ -61,6 +61,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v3.0.1.8#costom](https://github.com/lucida3rd/mastodon/commit/d94ae6762f2844abcaa7861e977de0e68c06f28c)】
 * ブラウザによってはタイムラインのトゥート公開範囲をクリックするとエラーになるのに対応した。　
   【[v3.0.1.9#costom](https://github.com/lucida3rd/mastodon/commit/e08c3b7be6da584dab725c9d7dd48167e2003bb1)】
+* cld3を使わないよう対応。　
+  【[v3.0.1.22#costom](https://github.com/lucida3rd/mastodon/commit/a0a3597642ee56a439d89dd1b8f50d9680aac1b0)】
 
 
 
