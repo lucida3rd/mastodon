@@ -246,6 +246,7 @@ class StatusActionBar extends ImmutablePureComponent {
     let replyTitle;
     let statusRange;
     let statusRange_Alt;
+    let insLocked;
 
     menu.push({ text: intl.formatMessage(messages.open), action: this.handleOpen });
 
@@ -329,6 +330,12 @@ class StatusActionBar extends ImmutablePureComponent {
       <IconButton className='status__action-bar-button' title={intl.formatMessage(messages.share)} icon='share-alt' onClick={this.handleShareClick} />
     );
 
+    if (account.get('locked') === true ) {
+      insLocked = "[L]";
+    } else {
+      insLocked = "" ;
+    }
+
     if (status.get('visibility') === 'public' ) {
       statusRange = "Pub" ;
       statusRange_Alt = intl.formatMessage(messages.range_public) ;
@@ -345,6 +352,7 @@ class StatusActionBar extends ImmutablePureComponent {
 
     return (
       <div className='status__action-bar'>
+        <div className='status__action-bar__counter' className='status__action-bar__counter__locked' >{insLocked}</div>
         <div className='status__action-bar__counter'><a href='javascript:void(0)' className='status__action-bar__counter__range' title={statusRange_Alt} >[{statusRange}]</a></div>
         <div className='status__action-bar__counter'><IconButton className='status__action-bar-button' title={replyTitle} icon={status.get('in_reply_to_account_id') === status.getIn(['account', 'id']) ? 'reply' : replyIcon} onClick={this.handleReplyClick} /><span className='status__action-bar__counter__label' >{obfuscatedCount(status.get('replies_count'))}</span></div>
         <IconButton className='status__action-bar-button' disabled={!publicStatus} active={status.get('reblogged')} pressed={status.get('reblogged')} title={!publicStatus ? intl.formatMessage(messages.cannot_reblog) : intl.formatMessage(messages.reblog)} icon={reblogIcon} onClick={this.handleReblogClick} />
