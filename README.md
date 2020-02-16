@@ -63,6 +63,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v3.0.1.9#costom](https://github.com/lucida3rd/mastodon/commit/e08c3b7be6da584dab725c9d7dd48167e2003bb1)】
 * cld3を使わないよう対応。　
   【[v3.0.1.22#costom](https://github.com/lucida3rd/mastodon/commit/a0a3597642ee56a439d89dd1b8f50d9680aac1b0)】
+* 鍵付きアカウントを[L]で表示するようにした。　
+  【[v3.1.1.1#costom](https://github.com/lucida3rd/mastodon/commit/41664b1946cc8de8d76745ee9c9cd6e8fed5fa92)】
 
 
 
