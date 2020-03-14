@@ -61,8 +61,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v3.0.1.8#costom](https://github.com/lucida3rd/mastodon/commit/d94ae6762f2844abcaa7861e977de0e68c06f28c)】
 * ブラウザによってはタイムラインのトゥート公開範囲をクリックするとエラーになるのに対応した。　
   【[v3.0.1.9#costom](https://github.com/lucida3rd/mastodon/commit/e08c3b7be6da584dab725c9d7dd48167e2003bb1)】
-* cld3を使わないよう対応。　
-  【[v3.0.1.22#costom](https://github.com/lucida3rd/mastodon/commit/a0a3597642ee56a439d89dd1b8f50d9680aac1b0)】
+* cld3を使わないよう対応。(再対応)　
+  【[v3.1.2.2#costom](https://github.com/lucida3rd/mastodon/commit/b1c594199b64b617e58c4c8b02b173538dafa738)】
 * 鍵付きアカウントを[L]で表示するようにした。　
   【[v3.1.1.1#costom](https://github.com/lucida3rd/mastodon/commit/41664b1946cc8de8d76745ee9c9cd6e8fed5fa92)】
 
