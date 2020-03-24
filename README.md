@@ -65,6 +65,8 @@ Mynoghra.jp用にカスタムした内容は次の通りです。
   【[v3.1.2.2#costom](https://github.com/lucida3rd/mastodon/commit/b1c594199b64b617e58c4c8b02b173538dafa738)】
 * 鍵付きアカウントを[L]で表示するようにした。　
   【[v3.1.1.1#costom](https://github.com/lucida3rd/mastodon/commit/41664b1946cc8de8d76745ee9c9cd6e8fed5fa92)】
+* 時限ミュート機能の実装。　
+  【[v3.1.2.3t#costom](https://github.com/lucida3rd/mastodon/commit/d6445ab89c05d5ef4632c06458046de75cc5cd6f)】
 
 
 
