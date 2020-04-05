@@ -13,11 +13,11 @@ module Mastodon
     end
 
     def patch
-      2
+      3
     end
 
     def pre
-      3
+      0
     end
 
     def flags
